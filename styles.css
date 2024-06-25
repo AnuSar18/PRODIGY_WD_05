@@ -1,0 +1,140 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+input {
+    padding: 10px;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.current-weather {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.forecast {
+    flex: 1;
+}
+
+.weather-info-box {
+    background: rgba(0, 123, 255, 0.1);
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: background 0.3s, box-shadow 0.3s; 
+}
+
+.weather-info-box:hover {
+    background: rgba(0, 123, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+}
+
+.weather-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.weather-detail {
+    background: rgba(0, 123, 255, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    flex: 1 1 45%;
+    position: relative;
+    transition: background 0.3s, box-shadow 0.3s; 
+}
+
+.weather-detail:hover {
+    background: rgba(0, 123, 255, 0.3);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+}
+
+.suggestion-box {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 20px;
+    transition: background 0.3s, box-shadow 0.3s; 
+}
+
+.suggestion-box:hover {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+}
+
+.suggestion-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.suggestion-box ul li {
+    padding: 5px 0;
+}
+
+canvas {
+    margin-top: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

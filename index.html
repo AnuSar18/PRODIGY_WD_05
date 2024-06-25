@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="input-group" id="search-bar">
+                <input type="text" id="location-input" placeholder="Enter location">
+                <button onclick="getWeatherByInput()">Get Weather</button>
+                <button onclick="getWeatherByLocation()">Get Weather by Location</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="current-weather">
+                <div class="weather-info-box" id="weather-info">
+                    
+                </div>
+            </div>
+            <div class="forecast">
+                <canvas id="forecastChart" width="400" height="200"></canvas>
+                <div class="forecast-info" id="forecast-info">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
